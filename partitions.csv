@@ -1,0 +1,4 @@
+# fxtk 分区表: 只需 nvs + phy + 1MB app (fxtk 无存储功能, 余下空间留用)
+nvs,      data, nvs,     0x9000,  0x6000,
+phy_init, data, phy,     0xf000,  0x1000,
+factory,  app,  factory, 0x10000, 0x100000,
